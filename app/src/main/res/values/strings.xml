@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JavaTask2</string>
+    <string name="nigeriaflag">nigeriaflag</string>
+    <string name="todo">TODO</string>
+    <string name="star">star</string>
+    <string name="lock">lock</string>
+    <string name="email">ebinfestus@gmail.com</string>
+    <string name="firstus">firstus</string>
+    <string name="name">Festus Ebin</string>
+    <string name="image">image</string>
+</resources>
