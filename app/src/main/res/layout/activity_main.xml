@@ -7,6 +7,26 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@drawable/guava" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@drawable/guava" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -17,7 +37,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/images__42_" />
+        tools:srcCompat="@drawable/flag6_removebg_preview" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -115,82 +135,191 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider3">
 
         <RelativeLayout
-            android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/a1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
                 tools:text="Likes: " />
+
             <Button
+                android:id="@+id/a2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="video Game" />
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a1"
+                android:text="@string/game" />
+
             <Button
+                android:id="@+id/a3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="football" />
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a2"
+                android:text="@string/football" />
+
             <Button
+                android:id="@+id/a4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="reading" />
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a3"
+                android:text="@string/reading" />
+
             <Button
+                android:id="@+id/a5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="movies" />
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a4"
+                android:text="@string/movies" />
+
             <Button
+                android:id="@+id/a6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="hanging out with friends" />
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a5"
+                android:text="@string/friends" />
 
             <TextView
+                android:id="@+id/b1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/a1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
-                tools:text="Dislikes: " />
+                tools:text="Disikes: " />
+
             <Button
+                android:id="@+id/b2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="video Game" />
+                android:layout_below="@id/a2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/b1"
+                android:text="@string/dishonesty" />
+
             <Button
+                android:id="@+id/b3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="football" />
+                android:layout_below="@id/a3"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/b2"
+                android:text="@string/lies" />
+
             <Button
+                android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="reading" />
+                android:layout_below="@id/a4"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/b3"
+                android:text="@string/feel_used" />
+
             <Button
+                android:id="@+id/b5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="movies" />
+                android:layout_below="@id/a5"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a4"
+                android:text="@string/cheating" />
+
             <Button
+                android:id="@+id/b6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="hanging out with friends" />
+                android:layout_below="@id/a6"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/a5"
+                android:text="@string/anger" />
+
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
+                tools:text="Hobbies: " />
+
+            <Button
+                android:id="@+id/c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b2"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c1"
+                android:text="@string/cooking" />
+
+            <Button
+                android:id="@+id/c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b3"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c2"
+                android:text="@string/eating" />
+
+            <Button
+                android:id="@+id/c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b4"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c3"
+                android:text="@string/tennis" />
+
+            <Button
+                android:id="@+id/c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b5"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c4"
+                android:text="@string/dancing" />
+
+            <Button
+                android:id="@+id/c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b6"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/c5"
+                android:text="@string/video_gaming" />
+
         </RelativeLayout>
     </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:srcCompat="@drawable/guava" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

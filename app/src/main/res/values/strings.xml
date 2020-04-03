@@ -8,4 +8,20 @@
     <string name="firstus">firstus</string>
     <string name="name">Festus Ebin</string>
     <string name="image">image</string>
+    <string name="friends">hanging out with friends</string>
+    <string name="movies">movies</string>
+    <string name="reading">reading</string>
+    <string name="football">football</string>
+    <string name="game">video Game</string>
+    <string name="dislikes">Dislikes:</string>
+    <string name="cheating">cheating</string>
+    <string name="feel_used">feel used</string>
+    <string name="lies">lies</string>
+    <string name="dishonesty">dishonesty</string>
+    <string name="anger">anger</string>
+    <string name="cooking">cooking</string>
+    <string name="video_gaming">video gaming</string>
+    <string name="dancing">dancing</string>
+    <string name="tennis">tennis</string>
+    <string name="eating">eating</string>
 </resources>
